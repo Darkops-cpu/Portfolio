@@ -273,3 +273,111 @@ span{
     }
 }
 
+
+
+/* General styling for the projects section */
+.projects-section {
+    padding: 60px 20px; /* Adjust padding as needed */
+    text-align: center; /* Center the "My Projects" heading */
+    color: #F0F0F0; /* Light text color for headings */
+}
+
+.projects-section h2 {
+    font-size: 3.5em;
+    margin-bottom: 40px;
+    color: #E00000; /* Use your bright red accent color */
+}
+
+/* Container for the grid of cards */
+.projects-grid {
+    display: grid;
+    /* For desktop: 3 columns, with a minimum width of 300px for each card */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px; /* Space between cards */
+    max-width: 1400px; /* Limit overall width */
+    margin: 0 auto; /* Center the grid */
+}
+
+/* Styling for each individual project card */
+.project-card {
+    background-color: #1a1a1a; /* Slightly lighter dark background for the card */
+    border-radius: 8px; /* Slightly rounded corners */
+    overflow: hidden; /* Ensures image corners match card corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+    text-align: left; /* Align content inside the card */
+    padding-bottom: 20px; /* Padding for content below the image */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Stronger shadow on hover */
+}
+
+.project-thumbnail {
+    width: 100%;
+    height: 200px; /* Fixed height for thumbnails */
+    object-fit: cover; /* Ensures images fill the space without distortion */
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 15px; /* Space below image */
+}
+
+.project-card .project-title {
+    font-size: 1.8em;
+    color: #FF3333; /* Use your brighter red for titles */
+    margin: 0 20px 10px; /* Space and side padding */
+}
+
+.project-card .project-description {
+    font-size: 1.5em;
+    color: #A0A0A0; /* Light grey for descriptions */
+    line-height: 1.5;
+    margin: 0 20px 15px; /* Space and side padding */
+    font-weight: bolder;
+}
+
+.project-tech-tags {
+    margin: 0 20px 15px; /* Space and side padding */
+}
+
+.tech-tag {
+    display: inline-block;
+    background-color: #330000; /* Darker red background for tags */
+    color: #FF6666; /* Lighter red text for tags */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 1em;
+    margin-right: 8px;
+    margin-bottom: 8px; /* For wrapping tags */
+    font-weight: bold;
+}
+
+.project-link {
+    display: inline-block;
+    background-color: #E00000; /* Your vibrant red for the button */
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px; /* Align with other content */
+    transition: background-color 0.3s ease;
+}
+
+.project-link:hover {
+    background-color: #FF3333; /* Slightly lighter red on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .projects-grid {
+        grid-template-columns: 1fr; /* Stack cards vertically on smaller screens */
+    }
+    .project-card {
+        margin: 0 15px; /* Add some side margin on mobile */
+    }
+    .projects-section {
+        padding: 40px 15px;
+    }
+}
