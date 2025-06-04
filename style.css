@@ -396,3 +396,9 @@ span{
 .aboutme{
     margin-bottom: -200px;
 }
+
+.heading-stack{
+    font-size: xx-large;
+    color: #E00000;
+    text-align: center;
+}
