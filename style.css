@@ -382,3 +382,17 @@ span{
     }
 }
 
+.heading-aboutme{
+    font-size: xx-large;
+    color: #E00000;
+}
+
+.aboutme-content{
+    font-size: 1.5rem;;
+    line-height: 1.6;
+    margin-top: 20px;
+}
+
+.aboutme{
+    margin-bottom: -200px;
+}
