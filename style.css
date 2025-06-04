@@ -294,7 +294,7 @@ span{
     /* For desktop: 3 columns, with a minimum width of 300px for each card */
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px; /* Space between cards */
-    max-width: 1400px; /* Limit overall width */
+    max-width: 1200px; /* Limit overall width */
     margin: 0 auto; /* Center the grid */
 }
 
@@ -381,3 +381,4 @@ span{
         padding: 40px 15px;
     }
 }
+
