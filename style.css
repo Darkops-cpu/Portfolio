@@ -397,30 +397,100 @@ span{
     margin-bottom: auto;
 }
 
-.heading-stack{
-    font-size: xx-large;
-    color: #E00000;
+/* --- Technology Stack Section --- */
+.stack {
+    padding: 80px 20px; /* Add top/bottom padding for section spacing */
+    background-color: #000000; /* Ensure section background is black */
+    color: #F5F5F5; /* Set default text color for consistency */
+}
+
+.heading-stack {
+    font-size: 2.8em; /* Make heading larger and more impactful (consistent with About Me concept) */
+    color: #E00000; /* Your vibrant red accent */
     text-align: center;
+    margin-bottom: 50px; /* Add more space below the heading */
+    text-transform: uppercase; /* Optional: adds a modern, bold feel */
+    letter-spacing: 2px;
 }
 
-.container-stack{
-    display: flex;
-    max-width: auto;
-
-}
-.stack-content{
-    padding: 20px;
-}
-
-.stack-img{
-    width: 100px;
-    height: 100px;
-    background-color: whitesmoke;
-    padding: 5px;
-    
+.container-stack {
+    display: grid; /* CHANGE: Use CSS Grid for better layout control */
+    /* Define responsive columns: auto-fit for flexible number, minmax(100px, 1fr) for item size */
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 30px; /* Space between the grid items (stack-content) */
+    max-width: 1200px; /* Max width for the grid to keep it contained (consistent with projects) */
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 0 20px; /* Add some inner padding for smaller screens */
 }
 
-.p-img{
-    font-size: 20px;
+.stack-content {
+    /* REMOVED: Initial padding was causing issues with overall card appearance */
+    /* padding: 20px; */
+
+    display: flex; /* Use flexbox to center content vertically/horizontally */
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+
+    background-color: #d1d1d1; /* Darker grey background for each tech item (card) */
+    border-radius: 8px; /* Slightly rounded corners for the "card" look */
+    padding: 20px 10px; /* Padding inside the card for content */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
+}
+
+.stack-content:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3); /* Red glow on hover (subtle) */
+}
+
+
+.stack-img {
+    width: 60px; /* Smaller, consistent icon size */
+    height: 60px; /* Consistent icon size */
+    object-fit: contain; /* Ensures images scale correctly without distortion */
+    /* REMOVED: background-color: whitesmoke; and padding: 5px; directly on img */
+    /* Instead, the background is now on the .stack-content (the "card") */
+    margin-bottom: 10px; /* Space between image and text */
+
+    /* Optional: If your SVG/PNG icons are colored and clash, you can try filters to make them monochrome or white */
+    /* filter: grayscale(100%) brightness(200%); */ /* Makes them white */
+    /* filter: sepia(100%) saturate(300%) hue-rotate(200deg) brightness(80%) contrast(100%); */ /* Example to make them red */
+}
+
+.p-img {
+    font-size: 1em; /* Standard font size (16px assuming default browser settings) */
+    color: #000000; /* Whitesmoke for the technology names */
+    font-weight: bolder;
     text-align: center;
+    font-weight: 500; /* Slightly bolder for better readability, as discussed */
+    margin: 0; /* Remove default paragraph margins */
 }
+
+
+/* --- Responsive Adjustments --- */
+@media (max-width: 768px) {
+    .heading-stack {
+        font-size: 2em; /* Smaller heading on mobile */
+    }
+    .container-stack {
+        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr)); /* Smaller min width for mobile icons */
+        gap: 20px;
+    }
+    .stack-img {
+        width: 50px;
+        height: 50px;
+    }
+    .p-img {
+        font-size: 0.9em; /* Slightly smaller text on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .container-stack {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); /* Even smaller min width for tiny screens */
+    }
+}
+
+
+
