@@ -394,11 +394,33 @@ span{
 }
 
 .aboutme{
-    margin-bottom: -200px;
+    margin-bottom: auto;
 }
 
 .heading-stack{
     font-size: xx-large;
     color: #E00000;
+    text-align: center;
+}
+
+.container-stack{
+    display: flex;
+    max-width: auto;
+
+}
+.stack-content{
+    padding: 20px;
+}
+
+.stack-img{
+    width: 100px;
+    height: 100px;
+    background-color: whitesmoke;
+    padding: 5px;
+    
+}
+
+.p-img{
+    font-size: 20px;
     text-align: center;
 }
