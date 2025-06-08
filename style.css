@@ -25,6 +25,7 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed; */
     color: #0B1D51;
+    scroll-behavior:cal(smooth);
 }
 
 header{
