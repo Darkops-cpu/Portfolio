@@ -18,13 +18,13 @@ body{
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    background-color: black;
+    background-color: #FFFDF6;
     /* background-image: url("background-image(1).jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed; */
-    color: white;
+    color: #0B1D51;
 }
 
 header{
@@ -44,7 +44,7 @@ header{
 
 .logo{
     font-size: 3rem;
-    color: #bc230b;
+    color: #0B1D51;
     font-weight: 800;
     cursor: pointer;
     transition: 0.5s ease;
@@ -65,8 +65,8 @@ nav a{
 
 nav a:hover,
 nav a.active{
-    color: #bc230b;
-    border-bottom: 3px solid #bc230b;
+    color: #4cb7e9;
+    border-bottom: 3px solid #4cb7e9;
 }
 
 @media(max-width:995px){
@@ -76,8 +76,8 @@ nav a.active{
         top: 0;
         right: 0;
         width: 40%;
-        border-left: 3px solid #bc230b;
-        border-bottom: 3px solid #bc230b;
+        border-left: 3px solid #4cb7e9;
+        border-bottom: 3px solid #4cb7e9;
         border-bottom-left-radius: 2rem;
         padding: 1rem solid;
         background-color: #161616;
@@ -98,7 +98,7 @@ nav a.active{
     nav a.active{
         padding: 1rem;
         border-radius: 0.5rem;
-        border-bottom: 0.5rem solid #bc230b;
+        border-bottom: 0.5rem solid #4cb7e9;
     }
 }
 
@@ -122,7 +122,7 @@ section{
 }
 
 span{
-    color: #bc230b;
+    color: #4cb7e9;
 }
 
 .home-content h3{
@@ -141,9 +141,9 @@ span{
 
 .home-img img{
     position: relative;
-    width: 32vw;
-    border-radius: 50%;
-    box-shadow: 0 0 25px solid #bc230b;
+    width: 20vw;
+    border-radius: 10px;
+    box-shadow: 0 0 25px solid #4cb7e9;
     cursor: pointer;
     transition: 0.2s linear;
 }
@@ -160,19 +160,19 @@ span{
     width: 4rem;
     height: 4rem;
     background-color: transparent;
-    border: 0.2rem solid #bc230b;
+    border: 0.2rem solid #4cb7e9;
     font-size: 2rem;
     border-radius: 50%;
     margin: 3rem 1.5rem 3rem 0;
     transition: 0.3s ease;
-    color: #bc230b;
+    color: #4cb7e9;
 }
 
 .social-icons a:hover{
     color: black;
     transform: scale(1.3) translateY(-5px);
-    background-color: #bc230b;
-    box-shadow: 0  0 25px #bc230b;
+    background-color: #4cb7e9;
+    box-shadow: 0  0 25px #4cb7e9;
 }
 
 .btn{
@@ -181,19 +181,19 @@ span{
     background-color: black;
     border-radius: 4rem;
     font-size: 1.6rem;
-    color: #bc230b;
+    color: #4cb7e9;
     letter-spacing: 0.3rem;
     font-weight: 600;
-    border: 2px solid #bc230b;
+    border: 2px solid #4cb7e9;
     transition: 0.3s ease;
     cursor: pointer;
 }
 
 .btn:hover{
     transform: scale3d(1.03);
-    background-color: #bc230b;
-    color: black;
-    box-shadow: 0 0 25px #bc230b;
+    background-color: #4cb7e9;
+    color: #0B1D51;
+    box-shadow: 0 0 25px #4cb7e9;
 }
 
 .typing-text{
@@ -208,7 +208,7 @@ span{
 
 .typing-text span::before{
     content: "software Developer";
-    color: #bc230b;
+    color: #4cb7e9;
     animation: words 20s infinite;
 }
 
@@ -225,25 +225,25 @@ span{
 
 @keyframes cursor{
     to{
-        border-left: 3px solid #bc230b;
+        border-left: 3px solid #4cb7e9;
     }
 }
 
 @keyframes words{
     0%, 20%{
-        content: "SS";
+        content: "C Dev";
     }
     21%, 40%{
-        content: "SD";
+        content: "PCB Desginer";
     }
     41%, 60%{
-        content: "SDE";
+        content: "Embedded Systems Tinkerer";
     }
     61%, 80%{
-        content: "SDE & SW";
+        content: "Verilog Builder";
     }
     81%, 100%{
-        content: "software Developer";
+        content: "Custom CPU Architect";
     }
 }
 
@@ -285,7 +285,7 @@ span{
 .projects-section h2 {
     font-size: 3.5em;
     margin-bottom: 40px;
-    color: #E00000; /* Use your bright red accent color */
+    color: #0B1D51; /* Use your bright red accent color */
 }
 
 /* Container for the grid of cards */
@@ -300,7 +300,7 @@ span{
 
 /* Styling for each individual project card */
 .project-card {
-    background-color: #1a1a1a; /* Slightly lighter dark background for the card */
+    background-color: #ffffff; /* Slightly lighter dark background for the card */
     border-radius: 8px; /* Slightly rounded corners */
     overflow: hidden; /* Ensures image corners match card corners */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
@@ -325,7 +325,7 @@ span{
 
 .project-card .project-title {
     font-size: 1.8em;
-    color: #FF3333; /* Use your brighter red for titles */
+    color: #0B1D51; /* Use your brighter red for titles */
     margin: 0 20px 10px; /* Space and side padding */
 }
 
@@ -344,10 +344,10 @@ span{
 .tech-tag {
     display: inline-block;
     background-color: #330000; /* Darker red background for tags */
-    color: #FF6666; /* Lighter red text for tags */
+    color: white; /* Lighter red text for tags */
     padding: 5px 10px;
     border-radius: 4px;
-    font-size: 1em;
+    font-size: 13px;
     margin-right: 8px;
     margin-bottom: 8px; /* For wrapping tags */
     font-weight: bold;
@@ -363,10 +363,11 @@ span{
     font-weight: bold;
     margin-left: 20px; /* Align with other content */
     transition: background-color 0.3s ease;
+    font-size: 13px;
 }
 
 .project-link:hover {
-    background-color: #FF3333; /* Slightly lighter red on hover */
+    background-color: #0B1D51; /* Slightly lighter red on hover */
 }
 
 /* Responsive adjustments */
@@ -384,7 +385,7 @@ span{
 
 .heading-aboutme{
     font-size: xx-large;
-    color: #E00000;
+    color: #0B1D51;
 }
 
 .aboutme-content{
@@ -410,7 +411,7 @@ span{
 /* --- Technology Stack Section (Dark Theme, Row-based Classifications) --- */
 .stack {
     padding: 80px 20px; /* Ample padding top/bottom for the section */
-    background-color: #000000; /* Dark background as per your original theme */
+    background-color: #FFFDF6; /* Dark background as per your original theme */
     color: #F5F5F5; /* Whitesmoke for main text color */
     text-align: center; /* Center align the main heading */
 }
@@ -439,7 +440,7 @@ span{
 
 .category-title {
     font-size: 2em;
-    color: #FF3333; /* Brighter red for category titles */
+    color: #0B1D51; /* Brighter red for category titles */
     margin-bottom: 30px;
     border-bottom: 2px solid rgba(255, 0, 0, 0.3); /* Subtle red underline */
     display: inline-block; /* Makes border only as wide as text */
@@ -467,7 +468,7 @@ span{
     justify-content: center;
     padding: 20px 10px;
 
-    background-color: #d6d4d4; /* Dark background for each tech item card */
+    background-color: #ffffff; /* Dark background for each tech item card */
     border-radius: 8px; /* Slightly rounded corners */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effects */
@@ -475,7 +476,7 @@ span{
 
 .stack-content:hover {
     transform: translateY(-5px); /* Lift effect on hover */
-    box-shadow: 0 5px 15px rgba(255, 0, 0, 0.3); /* Red glow on hover (subtle) */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Red glow on hover (subtle) */
 }
 
 .stack-img {
