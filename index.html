@@ -67,7 +67,7 @@
                 <br><br>
             
                 Lately, I’ve been working with <strong>Digital Logic Design</strong> and <strong>Hardware Description Languages (HDLs)</strong>, 
-                working on a passion project: <em>designing and simulating my own 8-bit (may scale it to 32-bit) CPU from scratch</em>. It’s not just about writing modules — 
+                working on a passion project: <em>designing and simulating my own 16-bit (may scale it to 32-bit) CPU from scratch</em>. It’s not just about writing modules — 
                 it’s about digging into the foundations of computation, understanding how everything clicks at the gate level, and turning that into a functional design.
                 <br><br>
             
@@ -106,10 +106,10 @@
     
             <div class="project-card">
                 <img src="icons/cpu.png" alt="Project 2 Thumbnail" class="project-thumbnail">
-                <h3 class="project-title">CPU Design (Ongoing)</h3>
-                <p class="project-description">Though an ongoing project, this project is aimed towards designing an 8 bit (upscale to 32 bit) CPU which can run basic tasks.
+                <h3 class="project-title">CPU Design</h3>
+                <p class="project-description">Though an ongoing project, this project is aimed towards designing a 16 bit (upscale to 32 bit) CPU which can run basic tasks.
                     <br>
-                The whole design is using the universal gate NAND, (NOR can also be used) the first basic designs are being set up on HDL code bits written on online simulators <br>
+                The whole design is using the universal gate NAND, (NOR can also be used) the first basic designs are being set up on HDL code bits written on VS codeand ran using simulators <br>
                     The design includes:
                     <br>
                     - ALU (Arithmetic Logic Unit) for basic arithmetic operations
@@ -120,20 +120,24 @@
 
                 </p>
                 <div class="project-tech-tags">
-                    <span class="tech-tag">HDL</span>
-                    <span class="tech-tag">Digital Logic</span>
+                    <span class="tech-tag">Verilog</span>
+                    <span class="tech-tag">IVerilog</span>
+                    <span class="tech-tag">GTKWave</span>
+
                 </div>
                 <a href="https://github.com/Darkops-cpu/CPU_BUILD" class="project-link">View Project</a>
             </div>
 
             <div class="project-card">
                 <img src="icons/TSU_MK1.png" alt="Project 3 Thumbnail" class="project-thumbnail">
-                <h3 class="project-title">Thermal Suppression Unit MK1: ColdFront (ongoing)</h3>
-                <p class="project-description">Though an ongoing project, this project is aimed towards designing a driving robot which can output flames from the command of the user, though the intensity of the flame cannot be controlled (depends on the gas flow) by the user this project aims to eliminate pest nests on small scale and to steer away wild boars and pigs from farms if implemented on a big scale. <br>
-                                   
-                - Will use the following tech for control, Arduino, ESP32, L289N, BLE, DC Motors, perfume spray (fuel), and a lighter.
+                <h3 class="project-title">Central Control System MK1: Pale Raven</h3>
+                <p class="project-description">
+                    This ongoing project builds a remotely controlled robot using an ESP32-hosted GUI. User commands are relayed to an Arduino Uno via 1:1 GPIO signaling to drive two DC motors. An ultrasonic sensor provides basic obstacle detection. <br> <br>
 
+                    The focus is on achieving low-latency, reliable communication between microcontrollers,separating logic and actuation layers. With delays only introduced by the ESP32 web interface.
                 </p>
+
+
                 <div class="project-tech-tags">
                     <span class="tech-tag">Embedded</span>
                     <span class="tech-tag">DnP</span>
