@@ -8,7 +8,7 @@ This repository contains the source code and assets for a minimalist personal po
 
 ## 📷 Preview
 
-![Website Screenshot](./screenshot.png)
+![Website Screenshot](icons/image.png)
 
 ---
 
